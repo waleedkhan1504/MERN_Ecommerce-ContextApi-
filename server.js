@@ -36,7 +36,7 @@ app.use("/api/v1/product", productRoutes);
 app.use("*", function (req, res) {
   res.sendFile(path.join({ root: __dirname }, "./client/build/index.html"));
 });
-app.use(noopServiceWorkerMiddleware("/"));
+
 
 //PORT
 const PORT = 8080;
